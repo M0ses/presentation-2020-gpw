@@ -1,4 +1,4 @@
-<!-- .slide: data-state="cover" id="guidelines-cover-page" data-timing="20" data-menu-title="Cover Page" -->
+<!-- .slide: data-state="cover" id="cover-page" data-timing="20" data-menu-title="Cover Page" -->
 <div class="title">
     <h1>Kanku</h1>
     <h2>Bridging the gap between OBS and developers</h2>
