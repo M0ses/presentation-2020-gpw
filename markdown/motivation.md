@@ -4,20 +4,11 @@
 <ul
    style="display:table-cell;vertical-align:top;"
 >
-<li> make working with OBS built images easier</li>
-<li> support whole lifecycle in virtualized environments (Development/QA/Deployment)</li>
-<li> simple jobs in complex setups
-  <ul>
-  <li> multiple VM's</li>
-  <li> highly configurable VM setup</li>
-  <li> Handlers for disks</li>
-  <li> Interface to test cases only via return codes</li>
-  </ul>
-</li>
-<li> Provide infrastructure for collaborative working</li>
-<li> Short roundtrip times while development/testing</li>
-<li> Reproducibility of setups</li>
-<li> scriptable (REST/cli remote client)</li>
+<li>Easy working with OBS built images</li>
+<li>Easy to configure (YAML)</li>
+<li>Simple jobs in complex setups</li>
+<li>Collaborative working</li>
+<li>Scriptable (REST/cli remote client)</li>
 </ul>
 <div
    style="display:table-cell;vertical-align:top;"

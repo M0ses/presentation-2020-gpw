@@ -13,6 +13,13 @@
   * Daemons / Activities / Components
 
 
+<!-- .slide: data-state="normal" id="demo-devel-mod" data-menu-title="Demo Developer Mode" -->
+
+<iframe src="http://localhost:8000/demo/devel-mode/demo-devel-mode.html" scrolling="no" frameborder="0"
+    style="position: relative; height: 100%; width: 100%;"/>
+
+
+
 <!-- .slide: data-state="normal" id="kanku-mode-devel" data-menu-title="Kanku Developer Mode" -->
 ### Developer Mode
 <div style="display: flex;">
@@ -58,17 +65,6 @@
     />
   </div>
 </div>
-
-
-<!-- .slide: data-state="normal" id="overview-diagram" data-menu-title="Diagram" -->
-## Diagram
-
-<img 
-  alt="Kanku Overview Modes" 
-  src="images/kanku_overview.svg"
-  style="height: 75%;"
-/>
-
 
 
 <!-- .slide: data-state="normal" id="jobs-diagram" data-menu-title="Job (Diagram)" -->

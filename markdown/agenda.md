@@ -7,6 +7,7 @@
 <div class="row presenters">
     <div class="presenter presenter-1">
         <h3 class="name">Frank Schreiner</h3>
+        <h3 class="name">M0ses</h3>
         <h3 class="job-title">OBS Backend Developer</h3>
         <h3 class="email"><a href="mailto:fschreiner@suse.de">fschreiner@suse.de</a></h3>
     </div>
@@ -17,6 +18,6 @@
 ## Agenda
 
 * Motivation
-* Overview
-* Beginning with kanku
-* Multiserver Setup
+* Overview of Modes
+* Basic Concepts
+* Basic Architecture
