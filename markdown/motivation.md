@@ -19,3 +19,11 @@
 />
 </div>
 </div>
+
+Note:
+
+* changes in OBS appliance images
+* No image testing in 2015
+* POC for simple testing
+* all components ready to replace vagrant
+* vagrant -> kanku (Devel mode)

@@ -110,6 +110,12 @@
   * worker only
   * all servers
 
+Note:
+
+* distribution mode examples
+  * master only - K::H::PortForwarding
+  * worker only - K::H::CreateDomain
+  * all servers - K::H::RemoveDomain
 
 <!-- .slide: data-state="normal" id="handler-intro" data-menu-title="Kanku::Handler" -->
 ## Kanku::Handler classes

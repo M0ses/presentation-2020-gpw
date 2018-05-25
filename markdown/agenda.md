@@ -13,6 +13,14 @@
     </div>
 </div>
 
+Note:
+
+# Questionaire
+
+* How many of you used OBS?
+* How many of you used OBS to build packages?
+* How many of you know vagrant?
+
 
 <!-- .slide: data-state="normal" id="agenda" data-menu-title="Agenda" -->
 ## Agenda
