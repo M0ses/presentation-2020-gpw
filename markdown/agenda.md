@@ -18,7 +18,7 @@ Note:
 # Questionaire
 
 * How many of you used OBS?
-* How many of you used OBS to build packages?
+* How many of you used OBS to build images?
 * How many of you know vagrant?
 
 

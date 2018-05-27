@@ -1,3 +1,24 @@
+<!-- .slide: data-state="normal" id="cheat-sheet" data-menu-title="Cheatsheet" -->
+
+# kanku cheatsheet
+
+```
+sudo zypper ar obs://devel:kanku devel:kanku
+sudo zypper ar obs://devel:kanku:perl devel:kanku:perl
+sudo zypper ref -s
+sudo zypper in kanku
+sudo /opt/kanku/bin/kanku --devel --interactive
+# reboot or at least re-login
+mkdir myProject
+cd myProject
+kanku init
+kanku up
+kanku ssh
+# start working
+```
+
+
+
 <!-- .slide: data-state="normal" id="call-to-action" data-menu-title="Call to action" -->
 <div class="call-to-action">
     <h2 class="inside">

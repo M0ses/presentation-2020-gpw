@@ -104,18 +104,14 @@
 />
 
 * Uses exactly one Kanku::Handler and defined options
+```
+  -
+    use_module: Kanku::Handler::CreateDomain
+    options:
+      domain_name: kanku-vm
+```
 * Will be executed once
-* multiple distribution modes 
-  * master only
-  * worker only
-  * all servers
 
-Note:
-
-* distribution mode examples
-  * master only - K::H::PortForwarding
-  * worker only - K::H::CreateDomain
-  * all servers - K::H::RemoveDomain
 
 <!-- .slide: data-state="normal" id="handler-intro" data-menu-title="Kanku::Handler" -->
 ## Kanku::Handler classes
@@ -132,6 +128,17 @@ Note:
   * finalize
 * Might have getters/setters to modify JobContext
   * Documented in POD
+* multiple distribution modes
+  * master only
+  * worker only
+  * all servers
+
+Note:
+
+* distribution mode examples
+  * master only - K::H::PortForwarding
+  * worker only - K::H::CreateDomain
+  * all servers - K::H::RemoveDomain
 
 
 <!-- .slide: data-state="normal" id="util-intro" data-menu-title="Kanku::Util" -->
