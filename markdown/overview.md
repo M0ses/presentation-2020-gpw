@@ -13,6 +13,13 @@
   * Daemons / Activities / Components
 
 
+<!-- .slide: data-state="normal" id="demo-devel-mod" data-menu-title="Demo Developer Mode" -->
+
+<iframe src="http://localhost:8000/demo/devel-mode/demo-devel-mode.html" scrolling="no" frameborder="0"
+    style="position: relative; height: 100%; width: 100%;"/>
+
+
+
 <!-- .slide: data-state="normal" id="kanku-mode-devel" data-menu-title="Kanku Developer Mode" -->
 ### Developer Mode
 <div style="display: flex;">
@@ -60,17 +67,6 @@
 </div>
 
 
-<!-- .slide: data-state="normal" id="overview-diagram" data-menu-title="Diagram" -->
-## Diagram
-
-<img 
-  alt="Kanku Overview Modes" 
-  src="images/kanku_overview.svg"
-  style="height: 75%;"
-/>
-
-
-
 <!-- .slide: data-state="normal" id="jobs-diagram" data-menu-title="Job (Diagram)" -->
 # Jobs / Tasks / Kanku::Handler / Kanku::Utils
 
@@ -108,11 +104,13 @@
 />
 
 * Uses exactly one Kanku::Handler and defined options
+```
+  -
+    use_module: Kanku::Handler::CreateDomain
+    options:
+      domain_name: kanku-vm
+```
 * Will be executed once
-* multiple distribution modes 
-  * master only
-  * worker only
-  * all servers
 
 
 <!-- .slide: data-state="normal" id="handler-intro" data-menu-title="Kanku::Handler" -->
@@ -130,6 +128,17 @@
   * finalize
 * Might have getters/setters to modify JobContext
   * Documented in POD
+* multiple distribution modes
+  * master only
+  * worker only
+  * all servers
+
+Note:
+
+* distribution mode examples
+  * master only - K::H::PortForwarding
+  * worker only - K::H::CreateDomain
+  * all servers - K::H::RemoveDomain
 
 
 <!-- .slide: data-state="normal" id="util-intro" data-menu-title="Kanku::Util" -->
