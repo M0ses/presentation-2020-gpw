@@ -25,8 +25,19 @@ Note:
 <!-- .slide: data-state="normal" id="agenda" data-menu-title="Agenda" -->
 ## Agenda
 
-* Motivation
 * C2C - Code to Customer
+* Motivation/Goals
 * Overview of Modes
 * Basic Concepts
 * Basic Architecture
+
+
+<!-- .slide: data-state="normal" id="jobs-diagram" data-menu-title="Job (Diagram)" -->
+# C2C - Code to Customer
+
+<img 
+  alt="Code to Customer - Overview" 
+  src="images/c2c.svg" 
+  style="height: 75%;"
+/>
+
