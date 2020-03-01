@@ -56,7 +56,7 @@ kanku up
 <!-- .slide: data-state="normal" id="kankufile" data-menu-title="KankuFile" -->
 ## KankuFile
 
-<pre>
+<pre style="font-size: 22px">
 domain_name: kanku-vm
 ...
 
