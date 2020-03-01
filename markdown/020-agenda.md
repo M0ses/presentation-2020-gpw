@@ -25,15 +25,15 @@ Note:
 <!-- .slide: data-state="normal" id="agenda" data-menu-title="Agenda" -->
 ## Agenda
 
-* C2C - Code to Customer
+* D2C - Developer to Customer
 * Motivation/Goals
 * Overview of Modes
 * Basic Concepts
 * Basic Architecture
 
 
-<!-- .slide: data-state="normal" id="jobs-diagram" data-menu-title="Job (Diagram)" -->
-# C2C - Code to Customer
+<!-- .slide: data-state="normal" id="d2c" data-menu-title="D2C - Developer to Customer" -->
+# D2C - Developer to Customer
 
 <img 
   alt="Code to Customer - Overview" 

@@ -1,22 +1,14 @@
-<!-- .slide: data-state="normal" id="cheat-sheet" data-menu-title="Cheatsheet" -->
+<!-- .slide: data-state="normal" id="external-resources" data-menu-title="External Resources" -->
 
-# kanku cheatsheet
+# External Resources
 
-```
-sudo zypper ar obs://devel:kanku devel:kanku
-sudo zypper ar obs://devel:kanku:perl devel:kanku:perl
-sudo zypper ref -s
-sudo zypper in kanku
-sudo /opt/kanku/bin/kanku --devel --interactive
-# reboot or at least re-login
-mkdir myProject
-cd myProject
-kanku init
-kanku up
-kanku ssh
-# start working
-```
+* [Kanku Cheatsheet](https://cheatography.com/m0ses/cheat-sheets/kanku/)
 
+* [Kanku POD Documentation](https://m0ses.github.io/kanku/pod/Kanku.html)
+
+* [Source Code on github](https://github.com/M0ses/kanku)
+
+* [Project Page on github.io](https://m0ses.github.io/kanku/)
 
 
 <!-- .slide: data-state="normal" id="call-to-action" data-menu-title="Call to action" -->
