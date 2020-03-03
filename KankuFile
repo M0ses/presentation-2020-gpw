@@ -1,5 +1,5 @@
 #
-domain_name: presentation-2020-gpw
+domain_name: presentation
 default_job: kanku-job
 login_user: root
 login_pass: kankudai
@@ -29,6 +29,7 @@ jobs:
       memory: 2G
       vcpu: 2
       use_9p: 1
+      mnt_dir_9p: /srv/www/htdocs/
       #forward_port_list: tcp:22,tcp:443
   -
     use_module: Kanku::Handler::PrepareSSH
@@ -37,12 +38,12 @@ jobs:
     options:
       commands:
         - zypper -n in apache2 ruby2.5-rubygem-sass
-        - cp /tmp/kanku/contrib/vhost.conf /etc/apache2/vhosts.d/presentation.conf
+        - systemctl enable --now apache2
   -
     use_module: Kanku::Handler::ExecuteCommandViaSSH
     options:
       username: kanku
       commands:
-        - git -C /tmp/kanku submodule init
-        - git -C /tmp/kanku submodule update
-        - cd /tmp/kanku; sass --update css
+        - git -C /srv/www/htdocs/ submodule init
+        - git -C /srv/www/htdocs/ submodule update
+        - cd /srv/www/htdocs/; sass --update css
