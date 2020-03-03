@@ -1,0 +1,48 @@
+#
+domain_name: presentation-2020-gpw
+default_job: kanku-job
+login_user: root
+login_pass: kankudai
+
+jobs:
+ kanku-job:
+  -
+    use_module: Kanku::Handler::SetJobContext
+    options:
+      host_interface: eth0
+  -
+    use_module: Kanku::Handler::OBSCheck
+    options:
+      api_url: https://api.opensuse.org/public
+      # Please have a look at
+      # kanku lsi
+      # to find more official Images
+      project: devel:kanku:images
+      package: openSUSE-Leap-15.1-JeOS
+      repository: images_leap_15_1
+      use_oscrc: 0
+  -
+    use_module: Kanku::Handler::ImageDownload
+  -
+    use_module: Kanku::Handler::CreateDomain
+    options:
+      memory: 2G
+      vcpu: 2
+      use_9p: 1
+      #forward_port_list: tcp:22,tcp:443
+  -
+    use_module: Kanku::Handler::PrepareSSH
+  -
+    use_module: Kanku::Handler::ExecuteCommandViaSSH
+    options:
+      commands:
+        - zypper -n in apache2 ruby2.5-rubygem-sass
+        - cp /tmp/kanku/contrib/vhost.conf /etc/apache2/vhosts.d/presentation.conf
+  -
+    use_module: Kanku::Handler::ExecuteCommandViaSSH
+    options:
+      username: kanku
+      commands:
+        - git -C /tmp/kanku submodule init
+        - git -C /tmp/kanku submodule update
+        - cd /tmp/kanku; sass --update css
